@@ -16,10 +16,10 @@ const YesPage = props => {
     return(
         <div>
         <h2>Try to {data.activity}</h2>
-        <h3>Price {data.price * 10 }/10</h3>
-        <h3>Difficulty {data.accessibility * 10 }/10</h3>
+        <h3 className="price">Price {data.price * 10 }/10</h3>
+        <h3 className="difficulty">Difficulty {data.accessibility * 10 }/10</h3>
         <p>Not Interested in this one?</p>
-        <button onClick={useEffect}>Try Again</button>
+        <button className="try-button" onClick={useEffect}>Try Again</button>
         </div>
         );
 }

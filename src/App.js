@@ -28,8 +28,10 @@ function App(props) {
     <div className="App">
       <h1>Are you Bored?</h1>
 
-      <button onClick={handleYesClick}>Yes</button>
-      <button onClick={handleNoClick}>No</button>
+      <div className='buttons'>
+      <button className="yes-button" onClick={handleYesClick}>Yes</button>
+      <button className="no-button" onClick={handleNoClick}>No</button>
+      </div>
 
       {
         yes && <YesPage/>
